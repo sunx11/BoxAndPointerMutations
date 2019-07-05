@@ -4,7 +4,7 @@ functions that MUTATE their arguments.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Xiaoze Sun.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -113,6 +113,10 @@ def run_test_swap_colors():
 
 
 def swap_colors(circle, rectangle):
+    rectcol = rectangle.fill_color
+    criccol = circle.fill_color
+    circle.fill_color =rectcol
+    rectangle.fill_color =criccol 
     """
     What comes in:
       -- An rg.Circle.
