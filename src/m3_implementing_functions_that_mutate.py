@@ -116,7 +116,7 @@ def swap_colors(circle, rectangle):
     rectcol = rectangle.fill_color
     criccol = circle.fill_color
     circle.fill_color =rectcol
-    rectangle.fill_color =criccol 
+    rectangle.fill_color =criccol
     """
     What comes in:
       -- An rg.Circle.
